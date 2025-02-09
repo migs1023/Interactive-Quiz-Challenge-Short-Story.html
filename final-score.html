@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet">
+        <title>Points-and-Current-Score-Page</title>
+    </head>
+<style> 
+    .wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 100vh;
+    font-family: Gameless sans;
+    }
+    .border{
+        height: 500px;
+        width: 500px;
+        display: block;
+        justify-content: center;
+        margin: 0px 400px;
+        border-radius: 10px;
+        top: 100px;
+        border-color: transparent;
+    }
+
+    .award_icon{
+        display: block;
+        font-size: 300px;
+        color: black;
+    }
+
+    .username, .userpoints{
+        color: black;
+        text-align: center;
+        margin-top: 15px;
+    }
+    .points{
+        color: gold;
+        font-size: 20px;
+        font-family: gameless sans;
+    }
+
+    .name{
+        font-size: 50px;
+        color: blue;
+    }
+
+</style>
+<body style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d49ba913-dbd1-4505-99cc-9bd433c6e42d/dfas15a-e473640b-eaea-4e5e-9798-d19d97f3bb0e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q0OWJhOTEzLWRiZDEtNDUwNS05OWNjLTliZDQzM2M2ZTQyZFwvZGZhczE1YS1lNDczNjQwYi1lYWVhLTRlNWUtOTc5OC1kMTlkOTdmM2JiMGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wdmVNfEdOmnXDhMMuzOjlRmrLQiqlVDxkvSGhGUmr9o); background-repeat: no-repeat;   background-attachment: fixed;
+background-size: 100% 100%;">
+    <!--AWARD & POINTS-->
+    <div class="wrapper">
+        <div class="border">
+            <i class="fas fa-award award_icon" style="margin: 10px 0px 0px 130px; color: gold"></i>
+            <h1 class="username" style="font-size: 50px; font-family: dusty;"><span class="name" style="font-size: 50px; font-family: dusty;"></span><br>WELL DONE!</h1>
+            <p class="userpoints">Your Points: <span class="points" style="color: black"></span></p>
+        </div>
+    </div>
+
+    <script src="https://kit.fontawesome.com/d56261bbb9.js"></script>
+    
+    <script src="userinfo.js"></script>
+</body>
+</html>

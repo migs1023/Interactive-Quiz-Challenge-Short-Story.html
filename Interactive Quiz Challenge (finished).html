@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Interactive Quiz Challenge: English - Short Story</title> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+
+
+
+        <style>
+        .container-section{
+            background-image:url("./background-outdoors.webp");
+            position: sticky;
+        }
+
+        .center{
+            text-align:center;
+            padding-left: 0px
+        }
+
+        .btn-blue{
+            background-color: lightskyblue;
+            border: 0px;
+            border-radius: 10px;
+            height: 50px;
+            width: 150px;
+            font-size: 15px;
+            font-family: Gameless sans;
+        }
+
+        button:hover {
+        background-color: yellow;
+    }
+
+        .prefix{
+            color: black;
+        }
+
+        .material-icons{
+            width: 30px;
+            height: 10px;
+        }
+
+        body{
+        font-family: Gameless Sans;
+        }
+
+        #quiz{
+        max-width: 500px;
+        margin: 0 auto;
+        padding: 20px;
+        }
+
+        h1{
+        text-align: center;
+        color: black;
+        font-size: 50px;
+        font-family: DUSTY;
+        background-image: url("pixel-art.avif");
+        }
+
+        h2{
+        text-align: center;
+        color: black;
+        }
+
+        h3{
+        text-align: center;
+        font-family: dusty;
+        font-size:40px;
+        padding-left: 0px;
+        color: black;
+        }
+
+        nav{
+            color: white;
+            background-color: rgb(137, 222, 255);
+            font-family: Gameless Sans;
+            text-align: center;
+        }
+
+        .progress{
+            position: absolute;
+            height: 5px;
+            display: block;
+            width: 98.5%;
+            background-color: blue;
+            background-clip: padding-box;
+            overflow: hidden;
+        }
+
+        .indeterminate {
+    background-color: yellow;
+  }
+
+  .indeterminate:before {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+    animation: indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite;
+  }
+
+  .indeterminate:after {
+    content: '';
+    position: absolute;
+    background-color: inherit;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    will-change: left, right;
+    -webkit-animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    animation: indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite;
+    -webkit-animation-delay: 1.15s;
+    animation-delay: 1.15s;
+  }
+
+
+@-webkit-keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@keyframes indeterminate {
+  0% {
+    left: -35%;
+    right: 100%;
+  }
+
+  60% {
+    left: 100%;
+    right: -90%;
+  }
+
+  100% {
+    left: 100%;
+    right: -90%;
+  }
+}
+
+@-webkit-keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+@keyframes indeterminate-short {
+  0% {
+    left: -200%;
+    right: 100%;
+  }
+
+  60% {
+    left: 107%;
+    right: -8%;
+  }
+
+  100% {
+    left: 107%;
+    right: -8%;
+  }
+}
+
+
+        </style>
+
+        <style>
+            .black-text{
+                color: black;
+                text-align: left;
+            }
+        </style>
+<body style="background-image: url(https://images-wixmp-ed30a86b8c4ca887773594c2.wixmp.com/f/d49ba913-dbd1-4505-99cc-9bd433c6e42d/dfas15a-e473640b-eaea-4e5e-9798-d19d97f3bb0e.png?token=eyJ0eXAiOiJKV1QiLCJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ1cm46YXBwOjdlMGQxODg5ODIyNjQzNzNhNWYwZDQxNWVhMGQyNmUwIiwiaXNzIjoidXJuOmFwcDo3ZTBkMTg4OTgyMjY0MzczYTVmMGQ0MTVlYTBkMjZlMCIsIm9iaiI6W1t7InBhdGgiOiJcL2ZcL2Q0OWJhOTEzLWRiZDEtNDUwNS05OWNjLTliZDQzM2M2ZTQyZFwvZGZhczE1YS1lNDczNjQwYi1lYWVhLTRlNWUtOTc5OC1kMTlkOTdmM2JiMGUucG5nIn1dXSwiYXVkIjpbInVybjpzZXJ2aWNlOmZpbGUuZG93bmxvYWQiXX0.wdmVNfEdOmnXDhMMuzOjlRmrLQiqlVDxkvSGhGUmr9o); background-repeat: no-repeat;   background-attachment: fixed;
+background-size: 100% 100%;">
+            <nav>INTERACTIVE QUIZ CHALLENGE: ENGLISH - SHORT STORY</nav>
+
+<section class="container-section">
+            <h1>WELCOME!</h1>
+            <form name="id" onsubmit="submitted(event)">
+                <h2>Player/Contestant Name</h2>
+
+
+                  <div class="progress">
+                    <div class="indeterminate"></div>
+                    </div>
+                <div class="input-field">
+                <i class="material-icons black-text prefix" style="padding-left: 575px; padding-top: 10px;">account_box</i>
+                <input type="text" id="name" style="width:180px;" class="black-text" id="name">
+                <label for="name" >Name Here</label>
+                </div>
+                <p class="center"><button type="submit" class="btn-blue" onclick="this.style.display='none';">Submit Name</button></p>
+                
+        <div>
+            <h3> GAME RULES</h3>
+            <p style="text-align: left; background-color: white; box-shadow: 0px 2px 5px 1px black;"> 1. Don't skip any questions in this quiz.</p>
+            <p style="text-align: left; background-color: white; box-shadow: 0px 2px 5px 1px black;"> 2. Answer as much as you can. The more correct answers, the more chances you win.</p>
+            <p style="text-align: left; background-color: white; box-shadow: 0px 2px 5px 1px black;"> 3. Remember, this is only a game. HAVE FUN. :).</p>
+        </div>     
+
+        <p class="center"><a href="new.html" class="btn-blue">BRING IT ON!!!</a></p>
+ </div>
+</body>
+                </div></section>   
+
+
+
+                </body>
+                <style>
+                    .input-field[type=text]:focus{
+                      width: 100%;
+                      padding: 12px 20px;
+                      margin: 8px 0;
+                      box-sizing: border-box;
+                      border: none;
+                      border-bottom: 2px solid blue;
+                    }
+                    
+                </style>
+
+<script>
+
+</script>
